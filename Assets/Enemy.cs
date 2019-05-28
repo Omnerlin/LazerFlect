@@ -19,4 +19,18 @@ public class Enemy : MonoBehaviour
     {
         
     }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            Die();
+        }
+    }
+
 }
