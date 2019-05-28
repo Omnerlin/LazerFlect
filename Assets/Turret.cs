@@ -16,6 +16,9 @@ public class Turret : MonoBehaviour
     [Tooltip("How far the preview line will be drawn")]
     public float rayLength = 7;
 
+    [Tooltip("Layers that the line preview should ignore when raycasting.")]
+    public LayerMask lineMask;
+
     [Tooltip("Whether or not to draw the shot preview line")]
     public bool showLine = true;
 
@@ -60,7 +63,7 @@ public class Turret : MonoBehaviour
         {
             Ray lineRay = new Ray(rayOrigin, rayDirection);
             RaycastHit hitinfo;
-            hit = Physics.Raycast(lineRay, out hitinfo, 500);
+            hit = Physics.Raycast(lineRay, out hitinfo, 500, lineMask);
             hitinfo.normal = new Vector3(hitinfo.normal.x, 0, hitinfo.normal.z);
             if (!hit) hitinfo.distance = 500;
             lineRenderer.positionCount++;

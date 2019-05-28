@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3016126202240913754}
   - component: {fileID: 3016126202240913755}
   - component: {fileID: 3016126202240913756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 3016126202940230639}
   - component: {fileID: 7884094339370808294}
   - component: {fileID: 1285078649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3016126203458946544}
   - component: {fileID: 3016126203458946559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

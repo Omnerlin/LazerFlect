@@ -335,6 +335,9 @@ MonoBehaviour:
   barrel: {fileID: 3662822853305800183}
   firePoint: {fileID: 3662822854481642602}
   rayLength: 25
+  lineMask:
+    serializedVersion: 2
+    m_Bits: 55
   showLine: 1
 --- !u!120 &1481462556
 LineRenderer:
